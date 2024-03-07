@@ -59,7 +59,7 @@ const containVars = {
 
 const MobileListNav = ({ open, handelOpen, menu }) => {
     return (
-        <div className='md:hidden'>
+        <div className='md:hidden z-50'>
             <AnimatePresence>
                 {open && (
                     <motion.div
@@ -67,26 +67,29 @@ const MobileListNav = ({ open, handelOpen, menu }) => {
                         initial="initial"
                         animate="animate"
                         exit="exit"
-                        className={`flex flex-col items-center justify-center h-full absolute top-0 bg-primary left-0 top-0 w-full origin-top gap-y-7 overflow-hidden`}
+                        className={`flex flex-col items-center justify-center h-full fixed z-40 bg-primary left-0 top-0 w-full origin-top gap-y-7 overflow-hidden`}
                     >
                         <motion.div
                             variants={containVars}
                             initial="initial"
                             animate="open"
                             exit="initial"
-                            className={`flex flex-col items-center justify-center h-full absolute top-0 bg-paperWhite left-0 top-0 w-full origin-top gap-y-7`}>
+                            className={`flex flex-col items-center justify-center h-full absolute top-0 bg-paperWhite left-0 top w-full origin-top gap-y-7`}>
                             
-                            <div className="w-full overflow-hidden">
+                            {/* CIRCLE COMPONENT */}
+                            {/* <div className="w-full overflow-hidden">
                             <motion.div
                                 variants={mobileListVart}
                                 className="w-56 h-56 bg-[#191e1f4a] absolute -bottom-12 -left-20 rounded-full before:w-48 before:h-48 before:bg-primary z-10 before:absolute before:bottom-0 before:left-0 before:rounded-full before:opacity-70">
                             </motion.div>
-                            </div>
+                            </div> */}
+                            {/* CIRCLE COMPONENT END*/}
+
 
                             <div className="md:hidden top-2 right-2 absolute overflow-hidden">
                             <motion.button variants={mobileListVart} >
                                 <IoCloseOutline
-                                    size={60}
+                                    size={47}
                                     onClick={handelOpen}
                                 />
                             </motion.button>
@@ -104,7 +107,7 @@ const MobileListNav = ({ open, handelOpen, menu }) => {
                     </motion.div>
                 )}
             </AnimatePresence>
-        </div>
+        </div>  
     );
 };
 
@@ -113,7 +116,7 @@ function MobileLink({ title, href }) {
         <motion.div variants={mobileListVart}>
             <Link
                 to={href}
-                className="font-poppins md:text-xl text-5xl font-bold tracking-wide relative before:w-full before:absolute before:bg-secondary before:scale-x-0 hover:before:scale-x-100 before:transition-all before:origin-left before:duration-300 before:h-[5px] before:bottom-2 rounded-lg"
+                className="font-poppins md:text-xl text-4xl font-bold tracking-wide relative before:w-full before:absolute before:bg-secondary before:scale-x-0 hover:before:scale-x-100 before:transition-all before:origin-left before:duration-300 before:h-[20px] before:bottom-1 before:rounded-md before:-z-10"
             >
                 {title}
             </Link>
