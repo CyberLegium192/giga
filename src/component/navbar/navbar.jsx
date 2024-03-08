@@ -37,7 +37,7 @@ const navbar = () => {
 
 
     return (
-        <div className={`w-full shadow-md fixed top-0 md:backdrop-blur-sm transition-all duration-300 max-sm:bg ${isChange ? 'bg-white' : 'bg-white/40 shadow-lg ring-1 ring-black/30'} z-50`} >
+        <div className={`w-full shadow-md fixed top-0 md:backdrop-blur-sm transition-all duration-300 max-sm:bg-white ${isChange ? 'bg-white' : 'bg-white/40 shadow-lg ring-1 ring-black/30'} z-50`} >
             <div className="p-3 md:flex justify-between items-center md:px-9 flex justify-between items-center">
                 <div className="w-36 md:w-36">
                     <img
