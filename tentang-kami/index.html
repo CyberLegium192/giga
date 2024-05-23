@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GIGA merupakan agensi Virtual YouTuber (VTuber) yang kini berbasis di Indonesia. Kami berdedikasi menjadi wadah bagi para pemuda Indonesia untuk mengekspresikan bakat dan kreativitas mereka melalui dunia virtual. Selain fokus pada pengembangan talenta lokal, kami juga memiliki tekad untuk mendorong pertumbuhan karakter-karakter buatan lokal dan mendukung industri kreatif dalam negeri. Dengan pendekatan ini, GIGA berusaha memperkaya ekosistem virtual dan menjadi penggerak utama dalam memajukan keberagaman dan keunikan kreativitas Indonesia di tingkat global."/>
+    <meta name="keywords" content="Giga, GIGA, Agensi giga, Virtual Youtuber, vtuber indonesia, vtuber, agency indonesia, industri kreatif, audisi vtuber"/>
+    <meta property="og:image" content="./assets/icon/giga.png"/>
+    <link rel="icon" type="image/png" href="./assets/icon/giga.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GIGA AGENCY</title>
+    
+    <!-- ========= FONT STYLE ======= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/style/index.css" type="text/css" media="all" />
+    <!-- ========= CDN STYLE ======== -->
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.5/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <!-- ======== NAVBAR STYLE ========== -->
+    <nav class="container-navbar">
+        <a class="navbar-brand" href="/index.html"><img src="../assets/icon/giga.webp" alt="GIGA Icons" class="w-36"/></a>
+        <button type="button" onclick="openNavbar()" id="navbar-button">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+    </nav>
+    <!-- NAVBAR MENU -->
+    <div class="w-full fixed top-0 left-0 h-0 bg-[#F8F9FB] z-50 overflow-hidden transition-all duration-700" id="navbar-menu">
+          <button type="button" onclick="closeNavbar()" id="navbar-button" class="absolute top-4 right-4">
+            <i class="fa-solid fa-xmark text-3xl"></i>
+          </button>
+          
+          <ul class="flex items-center justify-center h-full flex-col montserrat gap-y-7">
+            <li><a href="../index.html" class="text-3xl capitalize font-bold montserrat hover:text-[#60db90] duration-300">home</a></li>
+            <li><a href="/tentang-kami/index.html" class="text-3xl capitalize font-bold montserrat hover:text-[#60db90] duration-300">about</a></li>
+            <li><a href="../talent/index.html" class="text-3xl capitalize font-bold montserrat hover:text-[#60db90] duration-300">talent</a></li>
+            <li><a href="../audisi/index.html" class="text-3xl capitalize font-bold montserrat hover:text-[#60db90] duration-300">audition</a></li>
+            <li><a href="../karir/index.html" class="text-3xl capitalize font-bold montserrat hover:text-[#60db90] duration-300">career</a></li>
+            <li><a href="../kebijakan" class="text-3xl capitalize font-bold montserrat hover:text-[#60db90] duration-300">privacy</a></li>
+            
+          </ul>
+        </div> 
+  <!-- ======== NAVBAR END ============ -->
+
+  <section class="bg-dark py-4 px-3">
+    <h1 class="text-2xl font-semibold montserrat text-white capitalize">tentang kami</h1>
+    <p class="text-[16px] mt-2 text-white montserrat">GIGA merupakan agensi Virtual YouTuber (VTuber) yang kini berbasis di Indonesia. Kami berdedikasi menjadi wadah bagi para pemuda Indonesia untuk mengekspresikan bakat dan kreativitas mereka melalui dunia virtual. Selain fokus pada pengembangan talenta lokal, kami juga memiliki tekad untuk mendorong pertumbuhan karakter-karakter buatan lokal dan mendukung industri kreatif dalam negeri. Dengan pendekatan ini, GIGA berusaha memperkaya ekosistem virtual dan menjadi penggerak utama dalam memajukan keberagaman dan keunikan kreativitas Indonesia di tingkat global.</p>
+    
+    
+    <h1 class="text-2xl font-semibold mt-4 montserrat text-white capitalize">visi misi</h1>
+    
+    <p class="text-[16px] mt-2 text-white montserrat">
+      Visi: Menjadikan GIGA Agensi sebagai destinasi utama yang menyediakan sarana dan prasarana bagi generasi muda indonesia untuk secara aktif berkontribusi dalam era digital.
+      <br> 
+      Misi: Melaksanakan bisnis di bidang hiburan dan konten berbasis digital dengan baik, dengan merujukan pada norma-norma yang berlaku dalam masyarakat. kami berkomitmen untuk selalu sejalan dengan perkembangan kebutuhan audiens, baik di tingkat nasional maupun internasional.
+    </p>
+  </section>
+
+  <section class="py-4 px-3 pb-5 bg-dark">
+    <h2 class="text-2xl text-white montserrat font-semibold">Daftar Staff</h2>
+    
+    <div class="mt-4 grid grid-cols-2 gap-x-2 gap-y-8">
+      
+      <!-- CARD STAFF -->
+      <div class="w-full flex items-center flex-col">
+        
+        <div class="w-32 h-32 rounded-full overflow-hidden">
+          <img src="../assets/img/staff/fauzan.webp" alt="staff logo" class="w-full h-full object-cover">
+        </div>
+        
+        <h5 class="text-lg font-bold montserrat capitalize text-white mt-3">fauzan</h5>
+        <span class="montserrat capitalize text-white text-[15px] mt-2">Manager</span>
+        
+        
+        
+      </div>
+      <div class="w-full flex items-center flex-col">
+        
+        <div class="w-32 h-32 rounded-full overflow-hidden">
+          <img src="../assets/img/staff/yus.webp" alt="staff logo" class="w-full h-full object-cover">
+        </div>
+        
+        <h5 class="text-lg font-bold montserrat capitalize text-white mt-3">yusuf effendy</h5>
+        <span class="montserrat capitalize text-white text-[15px] mt-2">Talent Manager</span>
+        
+        
+        
+      </div>
+      <div class="w-full flex items-center flex-col">
+        
+        <div class="w-32 h-32 rounded-full overflow-hidden">
+          <img src="../assets/img/staff/nindya.webp" alt="staff logo" class="w-full h-full object-cover">
+        </div>
+        
+        <h5 class="text-lg font-bold montserrat capitalize text-white mt-3">yusuf effendy</h5>
+        <span class="montserrat capitalize text-white text-[15px] mt-2">Talent Manager</span>
+        
+        
+        
+      </div>
+      <div class="w-full flex items-center flex-col">
+        
+        <div class="w-32 h-32 rounded-full overflow-hidden">
+          <img src="../assets/img/staff/rahmat.webp" alt="staff logo" class="w-full h-full object-cover">
+        </div>
+        
+        <h5 class="text-lg font-bold montserrat capitalize text-white mt-3">rahmat</h5>
+        <span class="montserrat capitalize text-white text-[15px] mt-2">Talent Manager</span>
+        
+        
+        
+      </div>
+      <div class="w-full flex items-center flex-col">
+        
+        <div class="w-32 h-32 rounded-full overflow-hidden">
+          <img src="../assets/img/staff/aksan.webp" alt="staff logo" class="w-full h-full object-cover">
+        </div>
+        
+        <h5 class="text-lg font-bold montserrat capitalize text-white mt-3">aksen</h5>
+        <span class="montserrat capitalize text-white text-[15px] mt-2">Talent Manager</span>
+        
+        
+        
+      </div>
+      <div class="w-full flex items-center flex-col">
+        <div class="w-32 h-32 rounded-full overflow-hidden">
+          <img src="../assets/img/staff/ega.webp" alt="staff logo" class="w-full h-full object-cover">
+        </div>
+        <h5 class="text-lg font-bold montserrat capitalize text-white mt-3">ega</h5>
+        <span class="montserrat capitalize text-white text-[15px] mt-2">Talent Manager</span>  
+      </div>
+      <div class="w-full flex items-center flex-col">
+        <div class="w-32 h-32 rounded-full overflow-hidden">
+          <img src="../assets/img/staff/hendrik.webp" alt="staff logo" class="w-full h-full object-cover">
+        </div>
+        <h5 class="text-lg font-bold montserrat capitalize text-white mt-3">hendrik</h5>
+        <span class="montserrat capitalize text-white text-[15px] mt-2">Talent Manager</span>  
+      </div>
+      <div class="w-full flex items-center flex-col">
+        <div class="w-32 h-32 rounded-full overflow-hidden">
+          <img src="../assets/img/staff/rakha.webp" alt="staff logo" class="w-full h-full object-cover">
+        </div>
+        <h5 class="text-lg font-bold montserrat capitalize text-white mt-3">rakha</h5>
+        <span class="montserrat capitalize text-white text-[15px] mt-2">Talent Manager</span>  
+      </div>
+      <div class="w-full flex items-center flex-col">
+        <div class="w-32 h-32 rounded-full overflow-hidden">
+          <img src="../assets/img/staff/surya.webp" alt="staff logo" class="w-full h-full object-cover">
+        </div>
+        <h5 class="text-lg font-bold montserrat capitalize text-white mt-3">surya</h5>
+        <span class="montserrat capitalize text-white text-[15px] mt-2">Talent Manager</span>  
+      </div>
+      
+      
+      
+    </div>
+  </section>
+
+
+
+
+              <!-- FOOTER -->
+    <footer class="bg-gray-800 pt-8 pb-4 px-2 ">
+      <p class="text-white text-center montserrat text-sm">1338-2 Kumizawa-cho, Totsuka-ku, Yokohama-shi, Prefektur Kanagawa.</p>
+      
+      <ul class="flex justify-center items-center gap-x-6 my-4">
+        <li>
+          <a href="" class="text-2xl secondary-color hover:text-white duration-300 transition-colors"><i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="" class="text-2xl secondary-color hover:text-white duration-300 transition-colors"><i class="fa-brands fa-discord"></i>
+          </a>
+        </li>
+        <li>
+          <a href="" class="text-2xl secondary-color hover:text-white duration-300 transition-colors"><i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="" class="text-2xl secondary-color hover:text-white duration-300 transition-colors"><i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="" class="text-2xl secondary-color hover:text-white duration-300 transition-colors"><i class="fa-brands fa-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a href="" class="text-2xl secondary-color hover:text-white duration-300 transition-colors"><i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </li>
+      </ul>
+      
+      <ul class="flex flex-wrap justify-center items-center gap-x-6 my-4 px-3 gap-y-1">
+        <li>
+          <a href="../index.html" class="text-md poppins font-medium secondary-color hover:text-white duration-300 transition-colors">Beranda
+          </a>
+        </li>
+        <li>
+          <a href="/tentang-kami/index.html" class="text-md poppins font-medium secondary-color hover:text-white duration-300 transition-colors">Tentang Kami
+          </a>
+        </li>
+        <li>
+          <a href="" class="text-md poppins font-medium secondary-color hover:text-white duration-300 transition-colors">Kontak
+          </a>
+        </li>
+        <li>
+          <a href="/audisi/index.html" class="text-md poppins font-medium secondary-color hover:text-white duration-300 transition-colors">Audisi
+          </a>
+        </li>
+        <li>
+          <a href="/karir/index.html" class="text-md poppins font-medium secondary-color hover:text-white duration-300 transition-colors">Karir
+          </a>
+        </li>
+        <li>
+          <a href="" class="text-md poppins font-medium secondary-color hover:text-white duration-300 transition-colors">Kebijakan Privasi
+          </a>
+        </li>
+        <li>
+          <a href="" class="text-md poppins font-medium secondary-color hover:text-white duration-300 transition-colors">Pertanyaan Populer
+          </a>
+        </li>
+      </ul>
+      
+      <span class="text-center text-white block poppins tracking-wider text-[16px] mt-2">Made with ♥️ by GIGA</span>
+      
+      <p class="text-center poppins text-[15px] px-2 font-medium text-white mt-4">Copyright © 2024 GIGA AGENCY. All Rights Reserved</p>
+    </footer>
+
+
+
+
+
+
+
+    <script src="../assets/js/index.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../assets/js/navbar.js" type="text/javascript" charset="utf-8"></script>
+    <!-- SWIPER JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <!-- BOOTSTRAP CDN -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- FONT AWESOME CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
